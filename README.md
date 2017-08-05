@@ -4,7 +4,9 @@ The PC software (V2.35) and embedded controller are proprietary.
 
 I have encountered issues with the SW such as not supporting Windows 10, inconsistent fiducial marker recognition, random re-homing, a User interface I find confusing, and poor to non-existing documentation.
 
-This project will replace the embedded controller and driver with smoothieboard and replace the control SW with OpenPnP.  Once complete, a comparison test will be done against the original SW.
+This project will replace the embedded controller and driver with [smoothieboard](https://github.com/Smoothieware/Smoothieware) and replace the control SW with [OpenPnP](https://github.com/openpnp/openpnp).  
+
+Once complete, a comparison test will be done against the original SW.
 
 # Current Status:
 
