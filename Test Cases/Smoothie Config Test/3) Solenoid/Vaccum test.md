@@ -1,5 +1,5 @@
 The TVM802B has 2 vacuum pumps, 2 vacuum solenoid, and 2 vacuum sensor.
-This makes 2*2*2*2=16 configurations to test times 2 since nozzle may be blocked or not.
+This makes 2*2*2*2=16 configurations to test, but times 2 since nozzle may be blocked or not.
 
 # Nozzle blocked tests
 
