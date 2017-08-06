@@ -1,4 +1,19 @@
-## Line Mapping to QiHe Control Board
+## TVM802B Interconnections
+
+Inside the TVM802B before the conversion to Smoothie / OpenPnP.
+
+Inside of TVM802B:
+[Inside of TVM802B](https://github.com/johngrabner/tvm802B_2_smoothie_and_OpenPnP/blob/master/Images/Labels%20on%20Images/Slide1%20-%20Inside%20Before%20Changes.JPG)
+
+Control Board:
+[Control Board](Control Board)(https://github.com/johngrabner/tvm802B_2_smoothie_and_OpenPnP/blob/master/Images/Labels%20on%20Images/Slide2%20-%20TVM802B%20Controller.JPG)
+
+
+Dirver Board:
+[Dirver Board](https://github.com/johngrabner/tvm802B_2_smoothie_and_OpenPnP/blob/master/Images/Labels%20on%20Images/Slide3%20-%20TVM802B%20Driver.JPG)
+
+
+
 
 
 ## Stepper Mapping to Smoothie
