@@ -6,7 +6,7 @@ Inside of TVM802B:
 [Inside of TVM802B](https://raw.githubusercontent.com/johngrabner/tvm802B_2_smoothie_and_OpenPnP/master/Images/Labels%20on%20Images/Slide1%20-%20Inside%20Before%20Changes.JPG)
 
 Control Board:
-[Control Board](Control Board)(https://raw.githubusercontent.com.com/johngrabner/tvm802B_2_smoothie_and_OpenPnP/master/Images/Labels%20on%20Images/Slide2%20-%20TVM802B%20Controller.JPG)
+[Control Board](https://raw.githubusercontent.com.com/johngrabner/tvm802B_2_smoothie_and_OpenPnP/master/Images/Labels%20on%20Images/Slide2%20-%20TVM802B%20Controller.JPG)
 
 
 Dirver Board:
