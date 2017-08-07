@@ -1,5 +1,12 @@
-# NOTE Lines must not exceed 132 characters
-# Smoothie 2 XY=A1&2, ZA=Strip1&2, 
+# Smoothie 2 of 2
+# -----------------
+#    XY=A1&2 
+#    ZA=Strip1&2
+#    Big   MOSFET Q7  2.7   = Blow Solenoid 1 - 24V
+#    Big   MOSFET Q6  2.5   = Blow Solenoid 2 - 24V
+#    Small MOSFET Q8  2.4   = Up Light - 12V
+#    Small MOSFET Q9  2.6   = Pin Solenoid - 24V
+
 ## Robot module configurations : general handling of movement G-codes and slicing into moves
 default_feed_rate                            4000             # Default rate ( mm/minute ) for G1/G2/G3 moves
 default_seek_rate                            4000             # Default rate ( mm/minute ) for G0 moves
