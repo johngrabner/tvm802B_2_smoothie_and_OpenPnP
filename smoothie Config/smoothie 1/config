@@ -3,13 +3,13 @@
 ## M1 = X
 ## M2 = Y
 ## M3 = Z
-## Big   MOSFET Q7 ( 2.7 )  = Solenoid Vacuum 1
-## Big   MOSFET Q6 ( 2.5 )  = Solenoid Vacuum 2
-## Small MOSFET Q8 ( 2.4 )  = Vacuum Pump 2
-## Small MOSFET Q9 ( 2.6 )  = Vacuum Pump 1
-## Input           ( 2.11 ) = Sensor Vacuum 2
-## Input           ( 3.26 ) = Sensor Vacuum 1
-## Input           ( 3.25 ) = Sensor Pin Down
+## Big   MOSFET Q7  2.7   = Solenoid Vacuum 1
+## Big   MOSFET Q6  2.5   = Solenoid Vacuum 2
+## Small MOSFET Q8  2.4   = Vacuum Pump 1
+## Small MOSFET Q9  2.6   = Vacuum Pump 2
+## Input            2.11  = Sensor Vacuum 2
+## Input            3.26  = Sensor Vacuum 1
+## Input            3.25  = Sensor Pin Down
 
 # Basic motion configuration
 default_feed_rate                            4000             # Default speed (mm/minute) for G1/G2/G3 moves
@@ -22,13 +22,13 @@ mm_max_arc_error                             0.01             # The maximum erro
 
 # Arm solution configuration : Cartesian robot. Translates mm positions into stepper positions
 # See http://smoothieware.org/stepper-motors
-alpha_steps_per_mm                           80               # Steps per mm for alpha ( X ) stepper
-beta_steps_per_mm                            80               # Steps per mm for beta ( Y ) stepper
-gamma_steps_per_mm                           1600             # Steps per mm for gamma ( Z ) stepper
+alpha_steps_per_mm                           133.33               # Steps per mm for alpha ( X ) stepper
+beta_steps_per_mm                            133.33               # Steps per mm for beta ( Y ) stepper
+gamma_steps_per_mm                           200             # Steps per mm for gamma ( Z ) stepper
 
 # Planner module configuration : Look-ahead and acceleration configuration
 # See http://smoothieware.org/motion-control
-acceleration                                 3000             # Acceleration in mm/second/second.
+acceleration                                 100             # Acceleration in mm/second/second.
 #z_acceleration                              500              # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
 junction_deviation                           0.05             # See http://smoothieware.org/motion-control#junction-deviation
 #z_junction_deviation                        0.0              # For Z only moves, -1 uses junction_deviation, zero disables junction_deviation on z moves DO NOT SET ON A DELTA
@@ -44,19 +44,19 @@ z_axis_max_speed                             300              # Maximum speed in
 alpha_step_pin                               2.0              # Pin for alpha stepper step signal
 alpha_dir_pin                                0.5              # Pin for alpha stepper direction, add '!' to reverse direction
 alpha_en_pin                                 0.4              # Pin for alpha enable pin
-alpha_current                                1.5              # X stepper motor current
+alpha_current                                1.0              # X stepper motor current
 alpha_max_rate                               30000.0          # Maximum rate in mm/min
 
 beta_step_pin                                2.1              # Pin for beta stepper step signal
-beta_dir_pin                                 0.11             # Pin for beta stepper direction, add '!' to reverse direction
+beta_dir_pin                                 0.11!             # Pin for beta stepper direction, add '!' to reverse direction
 beta_en_pin                                  0.10             # Pin for beta enable
-beta_current                                 1.5              # Y stepper motor current
+beta_current                                 1.0              # Y stepper motor current
 beta_max_rate                                30000.0          # Maxmimum rate in mm/min
 
 gamma_step_pin                               2.2              # Pin for gamma stepper step signal
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction, add '!' to reverse direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
-gamma_current                                1.5              # Z stepper motor current
+gamma_current                                0.5              # Z stepper motor current
 gamma_max_rate                               300.0            # Maximum rate in mm/min
 
 ## Extruder module configuration
@@ -374,28 +374,28 @@ switch.vac2.output_type                      digital          # just an on or of
 switch.pump1.enable                            true             #
 switch.pump1.input_on_command                  M48             #
 switch.pump1.input_off_command                 M49             #
-switch.pump1.output_pin                        2.6              #
+switch.pump1.output_pin                        2.4              #
 switch.fan.output_type                       digital            # 
 
 ##PUMP2
 switch.pump2.enable                           true             #
 switch.pump2.input_on_command                 M42              #
 switch.pump2.input_off_command                M43              #
-switch.pump2.output_pin                       2.4              #
+switch.pump2.output_pin                       2.6              #
 switch.pump2.output_type                      digital          # 
 
 ## VACUUM SENSOR HEAD 1
 switch.vac1read.enable                           true            #
-switch.vac1read.input_pin                       3.26             #
+switch.vac1read.input_pin                       3.26^             #
 switch.vac1read.input_type                      digital          # just an on or off pin
 
 
 ## VACUUM SENSOR HEAD 2
 switch.vac2read.enable                           true             #
-switch.vac2read.input_pin                       2.11              #
+switch.vac2read.input_pin                       2.11^              #
 switch.vac2read.input_type                      digital          # just an on or off pin
 
 ## PIN DOWN UP SENSOR
 switch.pinread.enable                           true             #
-switch.pinread.input_pin                       3.25              #
+switch.pinread.input_pin                       3.25^              #
 switch.pinread.input_type                      digital          # just an on or off pin
