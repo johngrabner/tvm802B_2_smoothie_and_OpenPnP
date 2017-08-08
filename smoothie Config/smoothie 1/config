@@ -213,13 +213,13 @@ alpha_min_endstop                            1.24^            # Pin to read min 
 alpha_max_endstop                           1.25^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 alpha_homing_direction                       home_to_max      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 alpha_min                                    0                # This gets loaded as the current position after homing when home_to_min is set
-alpha_max                                    200              # This gets loaded as the current position after homing when home_to_max is set
+alpha_max                                    410              # This gets loaded as the current position after homing when home_to_max is set
 beta_min_endstop                             1.26^            # Pin to read min endstop, add a ! to invert if endstop is NO connected to ground
 beta_max_endstop                            1.27^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 beta_homing_direction                        home_to_max      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 beta_min                                     0                # This gets loaded as the current position after homing when home_to_min is set
-beta_max                                     200              # This gets loaded as the current position after homing when home_to_max is set
-gamma_min_endstop                            1.28^            # Pin to read min endstop, add a ! to invert if endstop is NO connected to ground
+beta_max                                     422              # This gets loaded as the current position after homing when home_to_max is set
+#gamma_min_endstop                            1.28^            # Pin to read min endstop, add a ! to invert if endstop is NO connected to ground
 #gamma_max_endstop                           1.29^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 gamma_homing_direction                       home_to_min      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 gamma_min                                    0                # This gets loaded as the current position after homing when home_to_min is set
@@ -242,8 +242,8 @@ beta_slow_homing_rate_mm_s                   25               # Beta/Y  slow hom
 gamma_fast_homing_rate_mm_s                  4                # Gamma/Z fast homing feedrate in mm/second
 gamma_slow_homing_rate_mm_s                  2                # Gamma/Z slow homing feedrate in mm/second
 
-alpha_homing_retract_mm                      5                # Distance to retract from the endstop after it is hit for alpha/X
-beta_homing_retract_mm                       5                # Distance to retract from the endstop after it is hit for beta/Y
+alpha_homing_retract_mm                      10                # Distance to retract from the endstop after it is hit for alpha/X
+beta_homing_retract_mm                       10                # Distance to retract from the endstop after it is hit for beta/Y
 gamma_homing_retract_mm                      1                # Distance to retract from the endstop after it is hit for gamma/Z
 
 
