@@ -22,8 +22,8 @@ mm_max_arc_error                             0.01             # The maximum erro
 
 # Arm solution configuration : Cartesian robot. Translates mm positions into stepper positions
 # See http://smoothieware.org/stepper-motors
-alpha_steps_per_mm                           133.33               # Steps per mm for alpha ( X ) stepper
-beta_steps_per_mm                            133.33               # Steps per mm for beta ( Y ) stepper
+alpha_steps_per_mm                           131               # Steps per mm for alpha ( X ) stepper
+beta_steps_per_mm                            131               # Steps per mm for beta ( Y ) stepper
 gamma_steps_per_mm                           200             # Steps per mm for gamma ( Z ) stepper
 
 # Planner module configuration : Look-ahead and acceleration configuration
@@ -218,7 +218,7 @@ beta_min_endstop                             1.26^            # Pin to read min 
 beta_max_endstop                            1.27^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 beta_homing_direction                        home_to_max      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 beta_min                                     0                # This gets loaded as the current position after homing when home_to_min is set
-beta_max                                     422              # This gets loaded as the current position after homing when home_to_max is set
+beta_max                                     429              # This gets loaded as the current position after homing when home_to_max is set
 #gamma_min_endstop                            1.28^            # Pin to read min endstop, add a ! to invert if endstop is NO connected to ground
 #gamma_max_endstop                           1.29^            # Pin to read max endstop, uncomment this and comment the above if using max endstops
 gamma_homing_direction                       home_to_min      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
