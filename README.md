@@ -12,7 +12,7 @@ Once complete, a comparison test will be done against the original SW.
 
 Smothieboard now controls the Stepper and Solenoids.  
 
-Working on reading of Vacuum Sensors.
+Vacuum Sensors and Pin Sensors functional.  Front Panel buttons not connected yet.
 
 Next up will be interfacing OpenPnP.
 
