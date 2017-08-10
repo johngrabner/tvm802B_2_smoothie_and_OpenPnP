@@ -474,13 +474,24 @@
             </axis>
             <axis name="z" type="Z" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
-                  <string>*</string>
+                  <string>69edd567-2341234-495a-9b30-2fcbf5c9742f</string>
+                  <string>69edd567-df6c-495a-9b30-2fcbf5c9742f</string>
                </head-mountable-ids>
+               <transform class="org.openpnp.machine.reference.driver.GcodeDriver$CamTransform" cam-radius="18.0" cam-wheel-radius="9.0" cam-wheel-gap="0.0">
+                  <negated-head-mountable-id>69edd567-2341234-495a-9b30-2fcbf5c9742f</negated-head-mountable-id>
+               </transform>
             </axis>
-            <axis name="rotation" type="Rotation" home-coordinate="0.0">
+            <axis name="c1" type="Rotation" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
-                  <string>*</string>
+                  <string>69edd567-2341234-495a-9b30-2fcbf5c9742f</string>
                </head-mountable-ids>
+               <pre-move-command>T0</pre-move-command>
+            </axis>
+            <axis name="c2" type="Rotation" home-coordinate="0.0">
+               <head-mountable-ids class="java.util.HashSet">
+                  <string>69edd567-df6c-495a-9b30-2fcbf5c9742f</string>
+               </head-mountable-ids>
+               <pre-move-command>T1</pre-move-command>
             </axis>
          </axes>
       </driver>
