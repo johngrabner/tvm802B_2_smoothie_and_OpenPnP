@@ -12,8 +12,8 @@
 ## Input            3.25  = Sensor Pin Down
 
 # Basic motion configuration
-default_feed_rate                            4000             # Default speed (mm/minute) for G1/G2/G3 moves
-default_seek_rate                            4000             # Default speed (mm/minute) for G0 moves
+default_feed_rate                            10000             # Default speed (mm/minute) for G1/G2/G3 moves
+default_seek_rate                            10000             # Default speed (mm/minute) for G0 moves
 mm_per_arc_segment                           0.0              # Fixed length for line segments that divide arcs, 0 to disable
 #mm_per_line_segment                         5                # Cut lines into segments this size
 mm_max_arc_error                             0.01             # The maximum error for line segments that divide arcs 0 to disable
@@ -24,19 +24,19 @@ mm_max_arc_error                             0.01             # The maximum erro
 # See http://smoothieware.org/stepper-motors
 alpha_steps_per_mm                           131               # Steps per mm for alpha ( X ) stepper
 beta_steps_per_mm                            131               # Steps per mm for beta ( Y ) stepper
-gamma_steps_per_mm                           200             # Steps per mm for gamma ( Z ) stepper
+gamma_steps_per_mm                           17.778     # Steps per degree for gamma ( Z ) stepper
 
 # Planner module configuration : Look-ahead and acceleration configuration
 # See http://smoothieware.org/motion-control
-acceleration                                 100             # Acceleration in mm/second/second.
-#z_acceleration                              500              # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
+acceleration                                 3000             # Acceleration in mm/second/second.
+z_acceleration                              500              # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
 junction_deviation                           0.05             # See http://smoothieware.org/motion-control#junction-deviation
 #z_junction_deviation                        0.0              # For Z only moves, -1 uses junction_deviation, zero disables junction_deviation on z moves DO NOT SET ON A DELTA
 
 # Cartesian axis speed limits
 x_axis_max_speed                             30000            # Maximum speed in mm/min
 y_axis_max_speed                             30000            # Maximum speed in mm/min
-z_axis_max_speed                             300              # Maximum speed in mm/min
+z_axis_max_speed                             3000             # Maximum speed in mm/min
 
 # Stepper module configuration 
 # Pins are defined as  ports, and pin numbers, appending "!" to the number will invert a pin
@@ -399,3 +399,6 @@ switch.vac2read.input_type                      digital          # just an on or
 switch.pinread.enable                           true             #
 switch.pinread.input_pin                       3.25^              #
 switch.pinread.input_type                      digital          # just an on or off pin
+
+switch.smoothie1.enable    true #
+switch.smoothie1.input_on_command                 M101    #

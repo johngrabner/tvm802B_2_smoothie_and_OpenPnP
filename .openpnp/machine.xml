@@ -3,7 +3,7 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="A1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="Nozzle_A1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
                   <nozzle-tips>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="Juki503" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -122,10 +122,10 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="-9.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1502305486310" name="A2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1502305486310" name="Nozzle_A2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
                   <nozzle-tips>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305637985" name="Juki503" allow-incompatible-packages="false">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -244,7 +244,7 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="-9.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
             </nozzles>
@@ -395,7 +395,7 @@
       </part-alignments>
       <discard-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
       <properties/>
-      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
+      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
             <text><![CDATA[^ok.*]]></text>
@@ -410,6 +410,8 @@
          <command type="HOME_COMMAND">
             <text><![CDATA[; HOME_COMMAND]]></text>
             <text><![CDATA[G28 ; Home all axes]]></text>
+            <text><![CDATA[M18Z0 ; disable Z motor, spring will Zero the seesaw; G0 will turn back on]]></text>
+            <text><![CDATA[G28.3Z0 ; set Z to 0]]></text>
          </command>
          <command type="MOVE_TO_COMMAND">
             <text><![CDATA[; COMMAND MOVE_TO_COMMAND]]></text>

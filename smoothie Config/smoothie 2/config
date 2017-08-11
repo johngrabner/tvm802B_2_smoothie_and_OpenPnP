@@ -47,19 +47,19 @@ z_axis_max_speed                             300              # mm/min
 alpha_step_pin                               2.0              # Pin for alpha stepper step signal
 alpha_dir_pin                                0.5              # Pin for alpha stepper direction
 alpha_en_pin                                 0.4              # Pin for alpha enable pin
-alpha_current                                0.5              # X stepper motor current
+alpha_current                                0.1              # X stepper motor current
 alpha_max_rate                               30000.0          # mm/min
 
 beta_step_pin                                2.1              # Pin for beta stepper step signal
 beta_dir_pin                                 0.11             # Pin for beta stepper direction
 beta_en_pin                                  0.10             # Pin for beta enable
-beta_current                                 0.5              # Y stepper motor current
+beta_current                                 0.1              # Y stepper motor current
 beta_max_rate                                30000.0          # mm/min
 
 gamma_step_pin                               2.2              # Pin for gamma stepper step signal
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
-gamma_current                                1.5              # Z stepper motor current
+gamma_current                                1.0              # Z stepper motor current
 gamma_max_rate                               300.0            # mm/min
 
 ## System configuration
@@ -289,3 +289,6 @@ network.ip_address                           auto             # use dhcp to get 
 #network.ip_mask                              255.255.255.0    # the ip mask
 #network.ip_gateway                           192.168.3.1      # the gateway address
 #network.mac_override                         xx.xx.xx.xx.xx.xx  # override the mac address, only do this if you have a conflict
+
+switch.smoothie2.enable true #
+switch.smoothie2.input_on_command                 M102    #
