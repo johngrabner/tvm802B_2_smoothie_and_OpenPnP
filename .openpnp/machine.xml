@@ -255,16 +255,16 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.ImageCamera" id="C1" name="Top" looking="Down" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" fps="24" width="640" height="480">
-                  <units-per-pixel units="Millimeters" x="0.04233" y="0.04233" z="0.0" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1502504759633" name="OpenCvCamera" looking="Down" settle-time-ms="250" rotation="90.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
+                  <units-per-pixel units="Millimeters" x="0.02610966" y="0.02610966" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                   <calibration enabled="false">
-                     <camera-matrix length="9">-1.9998926823081715E-63, 3.18299368645E-313, 1.483037525E-314, -1.9997072199586102E-63, 0.0, -1.9998424887814658E-63, -1.999851761796875E-63, 3.18299368645E-313, -1.9998332157661171E-63</camera-matrix>
-                     <distortion-coefficients length="5">0.0, 1.7976931348623157E308, 0.0, 0.0, 5.55333707E-315</distortion-coefficients>
+                     <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, NaN, 2.1219957905E-314, 0.0</camera-matrix>
+                     <distortion-coefficients length="5">3.18299368645E-313, 0.0, 1.0E-322, 0.0, 0.0</distortion-coefficients>
                   </calibration>
-                  <source-uri>classpath://samples/pnp-test/pnp-test.png</source-uri>
+                  <properties class="java.util.ArrayList"/>
                </camera>
             </cameras>
             <paste-dispensers/>
