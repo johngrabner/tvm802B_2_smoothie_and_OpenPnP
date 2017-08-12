@@ -3,7 +3,7 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="Nozzle_A1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="N1" name="Nozzle_A1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP1502305962145" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
                   <nozzle-tips>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="Juki503" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -34,7 +34,7 @@
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305648977" name="Juki504" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305648977" name="Juki504" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
@@ -63,7 +63,7 @@
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305938809" name="Juki505" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305938809" name="Juki505" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
@@ -92,7 +92,7 @@
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305962145" name="Juki506" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305962145" name="Juki506" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
@@ -122,7 +122,7 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="-9.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-23.873" y="-47.457" z="-9.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1502305486310" name="Nozzle_A2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
@@ -244,13 +244,13 @@
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="-9.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-3.07" y="-47.394" z="-9.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
             </nozzles>
             <actuators>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="A1" name="DragPin" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502559768978" name="JJGPin" index="0">
+                  <head-offsets units="Millimeters" x="-28.974" y="-9.933" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
             </actuators>
@@ -458,6 +458,9 @@
                   <text><![CDATA[; No pumps but blow solonoid needs to be off]]></text>
                   <text><![CDATA[M53 ; Blow 1 off ]]></text>
                   <text><![CDATA[M55 ; Blow 2 off]]></text>
+               </command>
+               <command head-mountable-id="ACT1502559768978" type="ACTUATE_BOOLEAN_COMMAND">
+                  <text><![CDATA[M{True:50}{False:51} ; Send "M50 to drop pin and M51 to raise"]]></text>
                </command>
                <sub-drivers class="java.util.ArrayList"/>
                <axes class="java.util.ArrayList"/>
