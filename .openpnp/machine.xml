@@ -125,9 +125,9 @@
                   <head-offsets units="Millimeters" x="-23.873" y="-47.457" z="-9.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1502305486310" name="Nozzle_A2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1502305486310" name="Nozzle_A2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP1502305637985" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
                   <nozzle-tips>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305637985" name="Juki503" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305637985" name="Juki503" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
@@ -156,7 +156,7 @@
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305999337" name="Juki504" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305999337" name="Juki504" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
@@ -185,7 +185,7 @@
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502306011089" name="Juki505" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502306011089" name="Juki505" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
@@ -214,7 +214,7 @@
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
                         <vacuum-level-part-off>0.0</vacuum-level-part-off>
                      </nozzle-tip>
-                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502306022889" name="Juki506" allow-incompatible-packages="false">
+                     <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502306022889" name="Juki506" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
                         <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                         <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
@@ -268,69 +268,37 @@
                </camera>
             </cameras>
             <paste-dispensers/>
-            <park-location units="Millimeters" x="400.0" y="419.0" z="0.0" rotation="0.0"/>
+            <park-location units="Millimeters" x="373.227" y="361.243" z="0.0" rotation="0.0"/>
          </head>
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F1" name="R0805" enabled="true" part-id="R0805-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="147.347" y="40.285" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="147.433" y="36.238" z="0.0" rotation="0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F2" name="R0603" enabled="true" part-id="R0603-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="157.385" y="40.199" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="157.328" y="36.267" z="0.0" rotation="0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F3" name="R0402" enabled="true" part-id="R0402-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="167.366" y="40.256" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="167.366" y="36.295" z="0.0" rotation="0.0"/>
-            <part-pitch value="2.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F4" name="R0201" enabled="true" part-id="R0201-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="177.404" y="40.256" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="177.376" y="36.267" z="0.0" rotation="0.0"/>
-            <part-pitch value="2.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F5" name="R0805-2" enabled="true" part-id="R0805-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="138.715" y="88.244" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="139.057" y="84.226" z="0.0" rotation="0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F6" name="R0805-3" enabled="true" part-id="R0805-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="155.055" y="87.275" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="154.713" y="83.314" z="0.0" rotation="0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F7" name="R0805-4" enabled="true" part-id="R0805-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="172.679" y="56.242" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="172.251" y="60.289" z="0.0" rotation="0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" id="F8" name="R0805-5" enabled="true" part-id="R0805-1K" retry-count="3" tape-type="WhitePaper" vision-enabled="true" feed-count="0">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="184.199" y="55.074" z="0.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="184.456" y="59.035" z="0.0" rotation="0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
-            <tape-width value="8.0" units="Millimeters"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1502586715755" name="ReferenceDragFeeder" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin">
+            <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="-2.124" y="15.301" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="1.891" y="15.301" z="0.0" rotation="0.0"/>
+            <feed-speed>1.0</feed-speed>
+            <vision enabled="true">
+               <area-of-interest x="188" y="243" width="130" height="149"/>
+               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            </vision>
+            <backoff-distance value="0.0" units="Millimeters"/>
          </feeder>
       </feeders>
-      <cameras/>
+      <cameras>
+         <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1502562254865" name="LookingUp" looking="Up" settle-time-ms="250" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="1" preferred-width="0" preferred-height="0" fps="24">
+            <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+            <head-offsets units="Millimeters" x="-9.573" y="315.743" z="0.0" rotation="0.0"/>
+            <safe-z value="0.0" units="Millimeters"/>
+            <calibration enabled="false">
+               <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+               <distortion-coefficients length="5">6.123233995736766E-17, 1.0, 0.9999999999999432, -1.0, 6.123233995736766E-17</distortion-coefficients>
+            </calibration>
+            <properties class="java.util.ArrayList"/>
+         </camera>
+      </cameras>
       <actuators>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306798397" name="Pump1" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -393,9 +361,9 @@
             <part-settings-by-part-id class="java.util.HashMap"/>
          </part-alignment>
       </part-alignments>
-      <discard-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <discard-location units="Millimeters" x="223.227" y="-28.757" z="0.0" rotation="0.0"/>
       <properties/>
-      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
+      <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="5000">
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
             <text><![CDATA[^ok.*]]></text>
@@ -405,16 +373,16 @@
             <text><![CDATA[G21 ; Set millimeters mode]]></text>
             <text><![CDATA[G90 ; Set absolute positioning mode]]></text>
             <text><![CDATA[M82 ; Set absolute mode for extruder]]></text>
-            <text><![CDATA[;switch vac1]]></text>
+            <text><![CDATA[;switch smoothie1]]></text>
          </command>
          <command type="HOME_COMMAND">
-            <text><![CDATA[; HOME_COMMAND]]></text>
+            <text><![CDATA[; Default HOME_COMMAND]]></text>
             <text><![CDATA[G28 ; Home all axes]]></text>
             <text><![CDATA[M18Z0 ; disable Z motor, spring will Zero the seesaw; G0 will turn back on]]></text>
             <text><![CDATA[G28.3Z0 ; set Z to 0]]></text>
          </command>
          <command type="MOVE_TO_COMMAND">
-            <text><![CDATA[; COMMAND MOVE_TO_COMMAND]]></text>
+            <text><![CDATA[; COMMAND default MOVE_TO_COMMAND]]></text>
             <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
          </command>
@@ -422,6 +390,7 @@
             <text><![CDATA[^unknown.*]]></text>
          </command>
          <command head-mountable-id="N1" type="PICK_COMMAND">
+            <text><![CDATA[;Nozzle H1 Nozzle_A1 PICK_COMMAND]]></text>
             <text><![CDATA[M48 ; turn on pump 1 (smoothie 1)]]></text>
             <text><![CDATA[M44 ; turn on vacuum solenoid (smoothie 1)]]></text>
             <text><![CDATA[M53 ; turn off blow 1]]></text>
@@ -439,7 +408,29 @@
             <text><![CDATA[M47 ; Pump 2 off]]></text>
          </command>
          <command type="DISABLE_COMMAND">
-            <text><![CDATA[;disable]]></text>
+            <text><![CDATA[;DISABLE_COMMAND]]></text>
+         </command>
+         <command type="ENABLE_COMMAND">
+            <text><![CDATA[; ENABLE_COMMAND]]></text>
+         </command>
+         <command type="POST_VISION_HOME_COMMAND">
+            <text><![CDATA[;POST_VISION_HOME_COMMAND]]></text>
+         </command>
+         <command head-mountable-id="N1" type="PLACE_COMMAND">
+            <text><![CDATA[;Nozzle: H1 Nozzle_A1 PLACE_COMMAND]]></text>
+         </command>
+         <command head-mountable-id="NOZ1502305486310" type="MOVE_TO_COMMAND">
+            <text><![CDATA[; COMMAND H1 Nozzle_A2 MOVE_TO_COMMAND]]></text>
+            <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+            <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
+         </command>
+         <command head-mountable-id="NOZ1502305486310" type="PICK_COMMAND">
+            <text><![CDATA[;Nozzle H2 Nozzle_A1 MOVE_TO_COMMAND]]></text>
+         </command>
+         <command head-mountable-id="N1" type="MOVE_TO_COMMAND">
+            <text><![CDATA[; COMMAND Nozzle H1 Nozzle_A1 MOVE_TO_COMMAND]]></text>
+            <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+            <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
          </command>
          <sub-drivers class="java.util.ArrayList">
             <gcode-driver port-name="COM7" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
@@ -488,19 +479,19 @@
             </axis>
             <axis name="c1" type="Rotation" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
-                  <string>69edd567-2341234-495a-9b30-2fcbf5c9742f</string>
+                  <string>N1</string>
                </head-mountable-ids>
                <pre-move-command>T0</pre-move-command>
             </axis>
             <axis name="c2" type="Rotation" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
-                  <string>69edd567-df6c-495a-9b30-2fcbf5c9742f</string>
+                  <string>N2</string>
                </head-mountable-ids>
                <pre-move-command>T1</pre-move-command>
             </axis>
          </axes>
       </driver>
-      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" park-when-complete="false"/>
+      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" park-when-complete="true"/>
       <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator">
          <pipeline>
             <stages>
