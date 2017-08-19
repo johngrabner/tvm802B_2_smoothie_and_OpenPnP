@@ -471,10 +471,10 @@
             <axis name="z" type="Z" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
                   <string>N1</string>
-                  <string>N2</string>
+                  <string>NOZ1502305486310</string>
                </head-mountable-ids>
                <transform class="org.openpnp.machine.reference.driver.GcodeDriver$CamTransform" cam-radius="18.0" cam-wheel-radius="9.0" cam-wheel-gap="0.0">
-                  <negated-head-mountable-id>N2</negated-head-mountable-id>
+                  <negated-head-mountable-id>NOZ1502305486310</negated-head-mountable-id>
                </transform>
             </axis>
             <axis name="c1" type="Rotation" home-coordinate="0.0">
