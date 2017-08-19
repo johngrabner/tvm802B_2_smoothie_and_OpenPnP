@@ -273,17 +273,17 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1502586715755" name="ReferenceDragFeeder" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503151047838" name="ReferenceDragFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="JJGPin">
             <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
-            <feed-start-location units="Millimeters" x="-2.124" y="15.301" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="1.891" y="15.301" z="0.0" rotation="0.0"/>
-            <feed-speed>1.0</feed-speed>
-            <vision enabled="true">
-               <area-of-interest x="188" y="243" width="130" height="149"/>
+            <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="13.699" y="15.403" z="0.0" rotation="0.0"/>
+            <feed-speed>0.01</feed-speed>
+            <vision enabled="true" template-image-name="tmpl_1666796114714947469.png">
+               <area-of-interest x="166" y="243" width="147" height="149"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.0" units="Millimeters"/>
+            <backoff-distance value="0.01" units="Millimeters"/>
          </feeder>
       </feeders>
       <cameras>
@@ -396,7 +396,7 @@
             <text><![CDATA[M53 ; turn off blow 1]]></text>
          </command>
          <command type="PUMP_ON_COMMAND">
-            <text><![CDATA[; PUMP_ON_COMMAND on Smoothie1]]></text>
+            <text><![CDATA[; Default PUMP_ON_COMMAND on Smoothie1]]></text>
             <text><![CDATA[M48 ; Pump 1 on]]></text>
             <text><![CDATA[M44 ; Vacuum 1 solenoid on]]></text>
             <text><![CDATA[M42 ; Pump 2 on]]></text>
