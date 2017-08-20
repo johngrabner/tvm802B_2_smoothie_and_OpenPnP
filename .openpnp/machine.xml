@@ -277,13 +277,25 @@
             <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="13.699" y="15.403" z="0.0" rotation="0.0"/>
-            <feed-speed>0.01</feed-speed>
+            <feed-speed>0.2</feed-speed>
             <vision enabled="true" template-image-name="tmpl_1666796114714947469.png">
                <area-of-interest x="166" y="243" width="147" height="149"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
             <backoff-distance value="0.01" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="ReferenceDragFeederWithPinSensorAndStripStepper" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="JJGPin">
+            <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="13.699" y="15.403" z="0.0" rotation="0.0"/>
+            <feed-speed>0.2</feed-speed>
+            <vision enabled="false">
+               <area-of-interest x="0" y="0" width="0" height="0"/>
+               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            </vision>
+            <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
       </feeders>
       <cameras>
@@ -366,7 +378,7 @@
       <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="5000">
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          <command type="COMMAND_CONFIRM_REGEX">
-            <text><![CDATA[^ok.*]]></text>
+            <text><![CDATA[^(ok)|(switch pinread).*]]></text>
          </command>
          <command type="CONNECT_COMMAND">
             <text><![CDATA[; COMMAND CONNECT_COMMAND]]></text>
@@ -432,6 +444,12 @@
             <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
          </command>
+         <command head-mountable-id="ACT1502559768978" type="ACTUATOR_READ_REGEX">
+            <text><![CDATA[switch pinread is (?<Value>-?\d+)]]></text>
+         </command>
+         <command head-mountable-id="ACT1502559768978" type="ACTUATOR_READ_COMMAND">
+            <text><![CDATA[switch pinread]]></text>
+         </command>
          <sub-drivers class="java.util.ArrayList">
             <gcode-driver port-name="COM7" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
                <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -452,6 +470,14 @@
                </command>
                <command head-mountable-id="ACT1502559768978" type="ACTUATE_BOOLEAN_COMMAND">
                   <text><![CDATA[M{True:50}{False:51} ; Send "M50 to drop pin and M51 to raise"]]></text>
+               </command>
+               <command type="HOME_COMMAND">
+                  <text><![CDATA[;default on subdirver HOME_COMMAND]]></text>
+                  <text><![CDATA[M51 ;to raise pin]]></text>
+               </command>
+               <command type="ENABLE_COMMAND">
+                  <text><![CDATA[;default on subdirver Enable_Command]]></text>
+                  <text><![CDATA[M51 ; to raise pin]]></text>
                </command>
                <sub-drivers class="java.util.ArrayList"/>
                <axes class="java.util.ArrayList"/>
