@@ -253,6 +253,18 @@
                   <head-offsets units="Millimeters" x="-28.974" y="-9.933" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503316975083" name="pinWithNoRead" index="0">
+                  <head-offsets units="Millimeters" x="-28.974" y="-9.933" z="0.0" rotation="0.0"/>
+                  <safe-z value="0.0" units="Millimeters"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503426532077" name="pinSensor" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <safe-z value="0.0" units="Millimeters"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503426537188" name="peelActuator" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <safe-z value="0.0" units="Millimeters"/>
+               </actuator>
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1502504759633" name="OpenCvCamera" looking="Down" settle-time-ms="250" rotation="90.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
@@ -292,6 +304,18 @@
             <feed-speed>0.2</feed-speed>
             <vision enabled="true" template-image-name="tmpl_177202665405465288.png">
                <area-of-interest x="175" y="255" width="140" height="152"/>
+               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            </vision>
+            <backoff-distance value="0.1" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503317097580" name="ReferenceDragFeederWithPinSensorAndStripStepper" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="pinWithNoRead">
+            <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="13.699" y="15.403" z="0.0" rotation="0.0"/>
+            <feed-speed>0.2</feed-speed>
+            <vision enabled="false">
+               <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
@@ -399,7 +423,7 @@
             <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
          </command>
          <command type="COMMAND_ERROR_REGEX">
-            <text><![CDATA[^unknown.*]]></text>
+            <text><![CDATA[^unknown.*|!!]]></text>
          </command>
          <command head-mountable-id="N1" type="PICK_COMMAND">
             <text><![CDATA[;Nozzle H1 Nozzle_A1 PICK_COMMAND]]></text>
@@ -444,10 +468,10 @@
             <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
          </command>
-         <command head-mountable-id="ACT1502559768978" type="ACTUATOR_READ_REGEX">
+         <command head-mountable-id="ACT1503426532077" type="ACTUATOR_READ_REGEX">
             <text><![CDATA[switch pinread is (?<Value>-?\d+)]]></text>
          </command>
-         <command head-mountable-id="ACT1502559768978" type="ACTUATOR_READ_COMMAND">
+         <command head-mountable-id="ACT1503426532077" type="ACTUATOR_READ_COMMAND">
             <text><![CDATA[switch pinread]]></text>
          </command>
          <sub-drivers class="java.util.ArrayList">
@@ -478,6 +502,10 @@
                <command type="ENABLE_COMMAND">
                   <text><![CDATA[;default on subdirver Enable_Command]]></text>
                   <text><![CDATA[M51 ; to raise pin]]></text>
+               </command>
+               <command type="TAPE_ADVANCE_COMMAND">
+                  <text><![CDATA[; COMMAND default TAPE_ADVANCE_COMMAND]]></text>
+                  <text><![CDATA[G0 {Z:X%.4f} {A:Y%.4f} F{FeedRate:%.0f} ; Z is X axis, A is Y axis]]></text>
                </command>
                <sub-drivers class="java.util.ArrayList"/>
                <axes class="java.util.ArrayList"/>
