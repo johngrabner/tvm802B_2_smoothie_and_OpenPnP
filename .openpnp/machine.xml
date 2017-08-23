@@ -265,6 +265,14 @@
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503433033886" name="forFeeder1onDriver1" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <safe-z value="0.0" units="Millimeters"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503433040894" name="forFeeder2onDriver2" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <safe-z value="0.0" units="Millimeters"/>
+               </actuator>
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1502504759633" name="OpenCvCamera" looking="Down" settle-time-ms="250" rotation="90.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
@@ -285,18 +293,6 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503151047838" name="ReferenceDragFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="JJGPin">
-            <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
-            <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="13.699" y="15.403" z="0.0" rotation="0.0"/>
-            <feed-speed>0.2</feed-speed>
-            <vision enabled="true" template-image-name="tmpl_1666796114714947469.png">
-               <area-of-interest x="166" y="243" width="147" height="149"/>
-               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            </vision>
-            <backoff-distance value="0.01" units="Millimeters"/>
-         </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="ReferenceDragFeederWithPinSensorAndStripStepper" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="JJGPin">
             <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
@@ -304,18 +300,6 @@
             <feed-speed>0.2</feed-speed>
             <vision enabled="true" template-image-name="tmpl_177202665405465288.png">
                <area-of-interest x="175" y="255" width="140" height="152"/>
-               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            </vision>
-            <backoff-distance value="0.1" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503317097580" name="ReferenceDragFeederWithPinSensorAndStripStepper" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="pinWithNoRead">
-            <location units="Millimeters" x="-4.385" y="11.734" z="0.0" rotation="0.0"/>
-            <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="13.699" y="15.403" z="0.0" rotation="0.0"/>
-            <feed-speed>0.2</feed-speed>
-            <vision enabled="false">
-               <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
@@ -336,14 +320,6 @@
          </camera>
       </cameras>
       <actuators>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306798397" name="Pump1" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306805524" name="Pump2" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306810285" name="SolenoidBlow1" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
@@ -365,6 +341,10 @@
             <safe-z value="0.0" units="Millimeters"/>
          </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306995510" name="SensorVac2" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <safe-z value="0.0" units="Millimeters"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503435627485" name="Pumps" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
          </actuator>
@@ -440,8 +420,10 @@
          </command>
          <command type="PUMP_OFF_COMMAND">
             <text><![CDATA[; smoothie 1 PUMP_OFF]]></text>
-            <text><![CDATA[M45 ; Pump 1 off]]></text>
-            <text><![CDATA[M47 ; Pump 2 off]]></text>
+            <text><![CDATA[M49 ; Pump 1 off]]></text>
+            <text><![CDATA[M43 ; Pump 2 off]]></text>
+            <text><![CDATA[M45 ; solenoid 1 off]]></text>
+            <text><![CDATA[M47 ; solenoid 2 off]]></text>
          </command>
          <command type="DISABLE_COMMAND">
             <text><![CDATA[;DISABLE_COMMAND]]></text>
@@ -474,6 +456,24 @@
          <command head-mountable-id="ACT1503426532077" type="ACTUATOR_READ_COMMAND">
             <text><![CDATA[switch pinread]]></text>
          </command>
+         <command head-mountable-id="ACT1503433033886" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[; this is on H1 forFeeder1onDriver1]]></text>
+         </command>
+         <command head-mountable-id="ACT1503435627485" type="ACTUATE_BOOLEAN_COMMAND">
+            <text><![CDATA[; not used by automation, just Actuator buttons]]></text>
+            <text><![CDATA[M{True:48}{False:49} ; Pump 1]]></text>
+            <text><![CDATA[M{True:42}{False:43} ; Pump 2 off]]></text>
+            <text><![CDATA[M{True:44}{False:45} ; solenoid 1 off]]></text>
+            <text><![CDATA[M{True:46}{False:47} ; solenoid 2 off]]></text>
+         </command>
+         <command head-mountable-id="ACT1503426537188" type="MOVE_TO_COMMAND">
+            <text><![CDATA[;dummy to prevent default from being called]]></text>
+         </command>
+         <command head-mountable-id="ACT1502559768978" type="MOVE_TO_COMMAND">
+            <text><![CDATA[; COMMAND default MOVE_TO_COMMAND]]></text>
+            <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:E%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+            <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
+         </command>
          <sub-drivers class="java.util.ArrayList">
             <gcode-driver port-name="COM7" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
                <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -496,16 +496,20 @@
                   <text><![CDATA[M{True:50}{False:51} ; Send "M50 to drop pin and M51 to raise"]]></text>
                </command>
                <command type="HOME_COMMAND">
-                  <text><![CDATA[;default on subdirver HOME_COMMAND]]></text>
+                  <text><![CDATA[;default on subdriver HOME_COMMAND]]></text>
                   <text><![CDATA[M51 ;to raise pin]]></text>
                </command>
                <command type="ENABLE_COMMAND">
                   <text><![CDATA[;default on subdirver Enable_Command]]></text>
                   <text><![CDATA[M51 ; to raise pin]]></text>
                </command>
-               <command type="TAPE_ADVANCE_COMMAND">
-                  <text><![CDATA[; COMMAND default TAPE_ADVANCE_COMMAND]]></text>
+               <command head-mountable-id="ACT1503426537188" type="MOVE_TO_COMMAND">
+                  <text><![CDATA[; COMMAND H1 PeelActuator MOVE_TO_COMMAND]]></text>
+                  <text><![CDATA[G92 Z0A0 ; do not want to be in relative mode, for XY, so just reset peel steppers]]></text>
                   <text><![CDATA[G0 {Z:X%.4f} {A:Y%.4f} F{FeedRate:%.0f} ; Z is X axis, A is Y axis]]></text>
+               </command>
+               <command head-mountable-id="ACT1503433040894" type="ACTUATE_BOOLEAN_COMMAND">
+                  <text><![CDATA[; this is on H1 forFeeder2onDriver2]]></text>
                </command>
                <sub-drivers class="java.util.ArrayList"/>
                <axes class="java.util.ArrayList"/>
