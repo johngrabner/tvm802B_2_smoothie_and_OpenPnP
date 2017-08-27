@@ -377,7 +377,7 @@
             <part-settings-by-part-id class="java.util.HashMap"/>
          </part-alignment>
       </part-alignments>
-      <discard-location units="Millimeters" x="223.227" y="-28.757" z="0.0" rotation="0.0"/>
+      <discard-location units="Millimeters" x="236.127" y="-40.457" z="-12.0" rotation="0.0"/>
       <properties/>
       <driver class="org.openpnp.machine.reference.driver.GcodeDriver" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="10000" connect-wait-time-milliseconds="5000">
          <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -431,6 +431,8 @@
          </command>
          <command head-mountable-id="N1" type="PLACE_COMMAND">
             <text><![CDATA[;Nozzle: H1 Nozzle_A1 PLACE_COMMAND]]></text>
+            <text><![CDATA[M45 ; solenoid 1 off]]></text>
+            <text><![CDATA[;M52 ; blow 1 on smoothie 2]]></text>
          </command>
          <command head-mountable-id="NOZ1502305486310" type="MOVE_TO_COMMAND">
             <text><![CDATA[; COMMAND H1 Nozzle_A2 MOVE_TO_COMMAND]]></text>
@@ -494,6 +496,10 @@
             <text><![CDATA[; H1 Nozzle_A2 PUMP_OFF_COMMAND]]></text>
             <text><![CDATA[M43 ; turn off pump 2]]></text>
          </command>
+         <command head-mountable-id="NOZ1502305486310" type="PLACE_COMMAND">
+            <text><![CDATA[M47 ; solenoid 2 off]]></text>
+            <text><![CDATA[;M54 ; blow 2 on smoothie 2]]></text>
+         </command>
          <sub-drivers class="java.util.ArrayList">
             <gcode-driver port-name="COM7" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
                <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -547,6 +553,28 @@
                   <text><![CDATA[; pump turned on by PUMP_ON_COMMAND]]></text>
                   <text><![CDATA[;M46 ; turn on vacuum solenoid (smoothie 1)]]></text>
                   <text><![CDATA[M55 ; turn off blow 2 (smoothie 2)]]></text>
+               </command>
+               <command head-mountable-id="N1" type="PLACE_COMMAND">
+                  <text><![CDATA[;Nozzle: H1 Nozzle_A1 PLACE_COMMAND]]></text>
+                  <text><![CDATA[;M45 ; solenoid 1 off smoothie 1]]></text>
+                  <text><![CDATA[M52 ; blow 1 on smoothie 2]]></text>
+                  <text><![CDATA[G4 P1000 ; dwell]]></text>
+                  <text><![CDATA[M32 ; blow 1 off]]></text>
+               </command>
+               <command head-mountable-id="NOZ1502305486310" type="PLACE_COMMAND">
+                  <text><![CDATA[;Nozzle: H1 Nozzle_A2 PLACE_COMMAND]]></text>
+                  <text><![CDATA[;M47 ; solenoid 2 off smoothie 1]]></text>
+                  <text><![CDATA[M54 ; blow 1 on smoothie 2]]></text>
+                  <text><![CDATA[G4 P1000 ; dwell]]></text>
+                  <text><![CDATA[M55 ; blow 1 off smoothie 2]]></text>
+               </command>
+               <command head-mountable-id="N1" type="PUMP_OFF_COMMAND">
+                  <text><![CDATA[;H1 Nozzle_A1 command PUMP_OFF]]></text>
+                  <text><![CDATA[;M53 ; blow 1 off]]></text>
+               </command>
+               <command head-mountable-id="NOZ1502305486310" type="PUMP_OFF_COMMAND">
+                  <text><![CDATA[;H1 Nozzle_A1 command PUMP_OFF]]></text>
+                  <text><![CDATA[;M55 ; blow 2 off]]></text>
                </command>
                <sub-drivers class="java.util.ArrayList"/>
                <axes class="java.util.ArrayList"/>
