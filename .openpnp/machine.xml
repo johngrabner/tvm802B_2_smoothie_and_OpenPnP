@@ -32,7 +32,7 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305648977" name="Juki504" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -61,7 +61,7 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305938809" name="Juki505" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -90,7 +90,7 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305962145" name="Juki506" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -119,11 +119,12 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
                   <head-offsets units="Millimeters" x="-23.873" y="-47.457" z="-9.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
+                  <vacuum-sense-actuator-name>vac1read</vacuum-sense-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ1502305486310" name="Nozzle_A2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP1502305637985" changer-enabled="false" invert-vacuum-sense-logic="false" limit-rotation="true">
                   <nozzle-tips>
@@ -154,7 +155,7 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502305999337" name="Juki504" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -183,7 +184,7 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502306011089" name="Juki505" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -212,7 +213,7 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                      <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1502306022889" name="Juki506" allow-incompatible-packages="true">
                         <compatible-package-ids class="java.util.HashSet"/>
@@ -241,11 +242,12 @@
                            </pipeline>
                         </calibration>
                         <vacuum-level-part-on>0.0</vacuum-level-part-on>
-                        <vacuum-level-part-off>0.0</vacuum-level-part-off>
+                        <vacuum-level-part-off>1.0</vacuum-level-part-off>
                      </nozzle-tip>
                   </nozzle-tips>
                   <head-offsets units="Millimeters" x="-3.07" y="-47.394" z="-9.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
+                  <vacuum-sense-actuator-name>vac2read</vacuum-sense-actuator-name>
                </nozzle>
             </nozzles>
             <actuators>
@@ -253,19 +255,15 @@
                   <head-offsets units="Millimeters" x="-28.974" y="-9.933" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503316975083" name="pinWithNoRead" index="0">
-                  <head-offsets units="Millimeters" x="-28.974" y="-9.933" z="0.0" rotation="0.0"/>
-                  <safe-z value="0.0" units="Millimeters"/>
-               </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503426532077" name="pinSensor" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503433033886" name="forFeeder1onDriver1" index="0">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503865659751" name="vac1read" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503433040894" name="forFeeder2onDriver2" index="0">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503865663863" name="vac2read" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
@@ -316,34 +314,6 @@
          </camera>
       </cameras>
       <actuators>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306810285" name="SolenoidBlow1" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306814229" name="SolenoidBlow2" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306846085" name="SolenoidVac1" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306852069" name="SolenoidVac2" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306988597" name="SensorVac1" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1502306995510" name="SensorVac2" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503435627485" name="Pumps" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
-         </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1503670785117" name="peelActuator" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
@@ -500,6 +470,18 @@
             <text><![CDATA[M47 ; solenoid 2 off]]></text>
             <text><![CDATA[;M54 ; blow 2 on smoothie 2]]></text>
          </command>
+         <command head-mountable-id="ACT1503865659751" type="ACTUATOR_READ_COMMAND">
+            <text><![CDATA[switch vac1read]]></text>
+         </command>
+         <command head-mountable-id="ACT1503865663863" type="ACTUATOR_READ_REGEX">
+            <text><![CDATA[switch vac2read is(?<Value>-?\d+)]]></text>
+         </command>
+         <command head-mountable-id="ACT1503865659751" type="ACTUATOR_READ_REGEX">
+            <text><![CDATA[switch vac1read is(?<Value>-?\d+)]]></text>
+         </command>
+         <command head-mountable-id="ACT1503865663863" type="ACTUATOR_READ_COMMAND">
+            <text><![CDATA[switch vac2read]]></text>
+         </command>
          <sub-drivers class="java.util.ArrayList">
             <gcode-driver port-name="COM7" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="1000">
                <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -559,7 +541,7 @@
                   <text><![CDATA[;M45 ; solenoid 1 off smoothie 1]]></text>
                   <text><![CDATA[M52 ; blow 1 on smoothie 2]]></text>
                   <text><![CDATA[G4 P1000 ; dwell]]></text>
-                  <text><![CDATA[M32 ; blow 1 off]]></text>
+                  <text><![CDATA[M53 ; blow 1 off]]></text>
                </command>
                <command head-mountable-id="NOZ1502305486310" type="PLACE_COMMAND">
                   <text><![CDATA[;Nozzle: H1 Nozzle_A2 PLACE_COMMAND]]></text>
