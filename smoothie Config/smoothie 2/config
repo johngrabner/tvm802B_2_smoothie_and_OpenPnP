@@ -19,7 +19,8 @@ mm_per_arc_segment                           0.5              # Arcs are cut int
 # Arm solution configuration : Cartesian robot. Translates mm positions into stepper positions
 alpha_steps_per_mm                           80               # Steps per mm for alpha stepper
 beta_steps_per_mm                            80               # Steps per mm for beta stepper
-gamma_steps_per_mm                           1600             # Steps per mm for gamma stepper
+gamma_steps_per_mm                           133             # Steps per mm for gamma stepper
+delta_steps_per_mm                           133             # Steps per mm for gamma stepper
 
 # Planner module configuration : Look-ahead and acceleration configuration
 planner_queue_size                           32               # DO NOT CHANGE THIS UNLESS YOU KNOW EXACTLY WHAT YOU ARE DOING
@@ -41,7 +42,8 @@ base_stepping_frequency                      100000           # Base frequency f
 # Cartesian axis speed limits
 x_axis_max_speed                             30000            # mm/min
 y_axis_max_speed                             30000            # mm/min
-z_axis_max_speed                             300              # mm/min
+z_axis_max_speed                             30000              # mm/min
+a_axis_max_speed                             30000              # mm/min
 
 # Stepper module pins ( ports, and pin numbers, appending "!" to the number will invert a pin )
 alpha_step_pin                               2.0              # Pin for alpha stepper step signal
@@ -59,8 +61,14 @@ beta_max_rate                                30000.0          # mm/min
 gamma_step_pin                               2.2              # Pin for gamma stepper step signal
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
-gamma_current                                1.0              # Z stepper motor current
-gamma_max_rate                               300.0            # mm/min
+gamma_current                                0.6              # Z stepper motor current
+gamma_max_rate                               30000.0            # mm/min
+
+delta_step_pin                               2.3              # Pin for gamma stepper step signal
+delta_dir_pin                                0.22             # Pin for gamma stepper direction
+delta_en_pin                                 0.21             # Pin for gamma enable
+delta_current                                0.6              # Z stepper motor current
+delta_max_rate                               30000.0            # mm/min
 
 ## System configuration
 # Serial communications configuration ( baud rate defaults to 9600 if undefined )
@@ -82,61 +90,23 @@ kill_button_pin                              2.12             # kill button pin.
 currentcontrol_module_enable                 true             #
 
 ## Extruder module configuration
-extruder.hotend.enable                          true             # Whether to activate the extruder module at all. All configuration is ignored if false
-extruder.hotend.steps_per_mm                    140              # Steps per mm for extruder stepper
-extruder.hotend.default_feed_rate               600              # Default rate ( mm/minute ) for moves where only the extruder moves
-extruder.hotend.acceleration                    500              # Acceleration for the stepper motor mm/sec²
-extruder.hotend.max_speed                       50               # mm/s
+extruder.hotend.enable                          false             # Whether to activate the extruder module at all. All configuration is ignored if false
 
-extruder.hotend.step_pin                        2.3              # Pin for extruder step signal
-extruder.hotend.dir_pin                         0.22             # Pin for extruder dir signal
-extruder.hotend.en_pin                          0.21             # Pin for extruder enable signal
 
-# extruder offset
-#extruder.hotend.x_offset                        0                # x offset from origin in mm
-#extruder.hotend.y_offset                        0                # y offset from origin in mm
-#extruder.hotend.z_offset                        0                # z offset from origin in mm
 
-# firmware retract settings when using G10/G11, these are the defaults if not defined, must be defined for each extruder if not using the defaults
-#extruder.hotend.retract_length                  3               # retract length in mm
-#extruder.hotend.retract_feedrate                45              # retract feedrate in mm/sec
-#extruder.hotend.retract_recover_length          0               # additional length for recover
-#extruder.hotend.retract_recover_feedrate        8               # recover feedrate in mm/sec (should be less than retract feedrate)
-#extruder.hotend.retract_zlift_length            0               # zlift on retract in mm, 0 disables
-#extruder.hotend.retract_zlift_feedrate          6000            # zlift feedrate in mm/min (Note mm/min NOT mm/sec)
 
-delta_current                                0.5              # First extruder stepper motor current
 
-# Second extruder module configuration
+
+
 #extruder.hotend2.enable                          true             # Whether to activate the extruder module at all. All configuration is ignored if false
-#extruder.hotend2.steps_per_mm                    140              # Steps per mm for extruder stepper
-#extruder.hotend2.default_feed_rate               600              # Default rate ( mm/minute ) for moves where only the extruder moves
-#extruder.hotend2.acceleration                    500              # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
-#extruder.hotend2.max_speed                       50               # mm/s
 
-#extruder.hotend2.step_pin                        2.8              # Pin for extruder step signal
-#extruder.hotend2.dir_pin                         2.13             # Pin for extruder dir signal
-#extruder.hotend2.en_pin                          4.29             # Pin for extruder enable signal
-
-#extruder.hotend2.x_offset                        0                # x offset from origin in mm
-#extruder.hotend2.y_offset                        25.0             # y offset from origin in mm
-#extruder.hotend2.z_offset                        0                # z offset from origin in mm
-#epsilon_current                              1.5              # Second extruder stepper motor current
 
 
 ## Laser module configuration
 laser_module_enable                          false            # Whether to activate the laser module at all. All configuration is
                                                               # ignored if false.
-#laser_module_pin                             2.5             # this pin will be PWMed to control the laser. Only P2.0 - P2.5, P1.18, P1.20, P1.21, P1.23, P1.24, P1.26, P3.25, P3.26
-                                                              # can be used since laser requires hardware PWM
-#laser_module_maximum_power                   1.0             # this is the maximum duty cycle that will be applied to the laser
-#laser_module_minimum_power                   0.0             # This is a value just below the minimum duty cycle that keeps the laser
-                                                              # active without actually burning.
-#laser_module_default_power                   0.8             # This is the default laser power that will be used for cuts if a power has not been specified.  The value is a scale between
-                                                              # the maximum and minimum power levels specified above
-#laser_module_pwm_period                      20              # this sets the pwm frequency as the period in microseconds
 
-                                                              # All configuration is ignored if false
+
 
 ## Switch module for Pin Selonoid control
 switch.pin.enable                            true             #
@@ -144,6 +114,10 @@ switch.pin.input_on_command                  M50             #
 switch.pin.input_off_command                 M51             #
 switch.pin.output_pin                        2.6              #
 switch.pin.output_type                       digital          # 
+# dragfeeder debug note: this command will block if a G0 Axxx is still running
+# not an issue since the drag feeder is done when drag pin is raised or lowered
+# but in debugging, I set the drag distance real big and this quirk pope up
+# and confused me 
 
 
 switch.blow1.enable                           true             #
@@ -179,7 +153,7 @@ switch.UpLight.output_type                      digital          # just an on or
 
 
 ## Endstops
-endstops_enable                              true             # the endstop module is enabled by default and can be disabled here
+endstops_enable                              false  # the endstop module is enabled by default and can be disabled here
 #corexy_homing                               false            # set to true if homing on a hbot or corexy
 alpha_min_endstop                            1.24^            # add a ! to invert if endstop is NO connected to ground
 alpha_max_endstop                            1.25^            # NOTE set to nc if this is not installed
@@ -194,8 +168,8 @@ beta_max                                     200              #
 gamma_min_endstop                            1.28^            #
 gamma_max_endstop                            1.29^            #
 gamma_homing_direction                       home_to_min      #
-gamma_min                                    0                #
-gamma_max                                    200              #
+#gamma_min                                    0                #
+#gamma_max                                    200              #
 
 # optional order in which axis will home, default is they all home at the same time,
 # if this is set it will force each axis to home one at a time in the specified order
@@ -222,12 +196,7 @@ gamma_homing_retract_mm                      1                # "
 
 ## Z-probe
 zprobe.enable                                false           # set to true to enable a zprobe
-zprobe.probe_pin                             1.28!^          # pin probe is attached to if NC remove the !
-zprobe.slow_feedrate                         5               # mm/sec probe feed rate
-#zprobe.debounce_count                       100             # set if noisy
-zprobe.fast_feedrate                         100             # move feedrate mm/sec
-zprobe.probe_height                          5               # how much above bed to start probe
-#gamma_min_endstop                           nc              # normally 1.28. Change to nc to prevent conflict,
+
 
 # associated with zprobe the leveling strategy to use
 #leveling-strategy.three-point-leveling.enable         true        # a leveling strategy that probes three points to define a plane and keeps the Z parallel to that plane
@@ -290,5 +259,4 @@ network.ip_address                           auto             # use dhcp to get 
 #network.ip_gateway                           192.168.3.1      # the gateway address
 #network.mac_override                         xx.xx.xx.xx.xx.xx  # override the mac address, only do this if you have a conflict
 
-switch.smoothie2.enable true #
-switch.smoothie2.input_on_command                 M102    #
+switch.smoothie2.enable true # so i can query what smoothie this is

@@ -29,14 +29,14 @@ gamma_steps_per_mm                           17.778     # Steps per degree for g
 # Planner module configuration : Look-ahead and acceleration configuration
 # See http://smoothieware.org/motion-control
 acceleration                                 3000             # Acceleration in mm/second/second.
-z_acceleration                              500              # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
+z_acceleration                               300             # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
 junction_deviation                           0.05             # See http://smoothieware.org/motion-control#junction-deviation
 #z_junction_deviation                        0.0              # For Z only moves, -1 uses junction_deviation, zero disables junction_deviation on z moves DO NOT SET ON A DELTA
 
 # Cartesian axis speed limits
 x_axis_max_speed                             30000            # Maximum speed in mm/min
 y_axis_max_speed                             30000            # Maximum speed in mm/min
-z_axis_max_speed                             3000             # Maximum speed in mm/min
+z_axis_max_speed                             30000             # Maximum speed in mm/min
 
 # Stepper module configuration 
 # Pins are defined as  ports, and pin numbers, appending "!" to the number will invert a pin
@@ -44,20 +44,20 @@ z_axis_max_speed                             3000             # Maximum speed in
 alpha_step_pin                               2.0              # Pin for alpha stepper step signal
 alpha_dir_pin                                0.5              # Pin for alpha stepper direction, add '!' to reverse direction
 alpha_en_pin                                 0.4              # Pin for alpha enable pin
-alpha_current                                1.0              # X stepper motor current
+alpha_current                                0.6              # X stepper motor current
 alpha_max_rate                               30000.0          # Maximum rate in mm/min
 
 beta_step_pin                                2.1              # Pin for beta stepper step signal
 beta_dir_pin                                 0.11!             # Pin for beta stepper direction, add '!' to reverse direction
 beta_en_pin                                  0.10             # Pin for beta enable
-beta_current                                 1.0              # Y stepper motor current
+beta_current                                 0.6              # Y stepper motor current
 beta_max_rate                                30000.0          # Maxmimum rate in mm/min
 
 gamma_step_pin                               2.2              # Pin for gamma stepper step signal
 gamma_dir_pin                                0.20             # Pin for gamma stepper direction, add '!' to reverse direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
 gamma_current                                0.5              # Z stepper motor current
-gamma_max_rate                               300.0            # Maximum rate in mm/min
+gamma_max_rate                               3000.0            # Maximum rate in mm/min
 
 ## Extruder module configuration
 # See http://smoothieware.org/extruder
@@ -401,4 +401,3 @@ switch.pinread.input_pin                       3.25^              #
 switch.pinread.input_type                      digital          # just an on or off pin
 
 switch.smoothie1.enable    true #
-switch.smoothie1.input_on_command                 M101    #
