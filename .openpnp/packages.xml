@@ -1,12 +1,12 @@
 <openpnp-packages>
    <package version="1.1" id="FIDUCIAL-1X2">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0">
-         <pad name="1" x="0.0" y="0.0" width="1.0" height="1.0" rotation="0.0" roundness="100.0"/>
+         <pad name="1" x="0.0" y="0.0" width="2.0" height="2.0" rotation="0.0" roundness="100.0"/>
       </footprint>
    </package>
    <package version="1.1" id="R0805" description="R0805">
       <footprint units="Millimeters" body-width="2.0" body-height="1.25">
-         <pad name="1" x="-0.825" y="0.0" width="0.35" height="1.25" rotation="0.0" roundness="0.0"/>
+         <pad name="1" x="-2.0" y="1.0" width="0.7" height="2.0" rotation="-45.0" roundness="0.0"/>
          <pad name="2" x="0.825" y="0.0" width="0.35" height="1.25" rotation="0.0" roundness="0.0"/>
       </footprint>
    </package>
@@ -28,40 +28,61 @@
          <pad name="2" x="0.225" y="0.0" width="0.15" height="0.3" rotation="0.0" roundness="0.0"/>
       </footprint>
    </package>
-   <package version="1.1" id="TQFP32">
-      <footprint units="Millimeters" body-width="7.0" body-height="7.0">
-         <pad name="1" x="-4.0" y="-2.625" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="2" x="-4.0" y="-1.875" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="3" x="-4.0" y="-1.125" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="4" x="-4.0" y="-0.375" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="5" x="-4.0" y="0.375" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="6" x="-4.0" y="1.125" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="7" x="-4.0" y="1.875" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="8" x="-4.0" y="2.625" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="9" x="-2.625" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="10" x="-1.875" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="11" x="-1.125" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="12" x="-0.375" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="13" x="0.375" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="14" x="1.125" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="15" x="1.875" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="16" x="2.625" y="-4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="17" x="4.0" y="-2.625" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="18" x="4.0" y="-1.875" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="19" x="4.0" y="-1.125" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="20" x="4.0" y="-0.375" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="21" x="4.0" y="0.375" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="22" x="4.0" y="1.125" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="23" x="4.0" y="1.875" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="24" x="4.0" y="2.625" width="0.36" height="1.0" rotation="90.0" roundness="0.0"/>
-         <pad name="25" x="-2.625" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="26" x="-1.875" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="27" x="-1.125" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="28" x="-0.375" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="29" x="0.375" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="30" x="1.125" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="31" x="1.875" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-         <pad name="32" x="2.625" y="4.0" width="0.36" height="1.0" rotation="0.0" roundness="0.0"/>
-      </footprint>
+   <package version="1.1" id="0805N">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="1206L075/13.2WRCT-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="28821-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="4UCON 00073">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="511-1356-1-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="516-3219-1-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="587-1621-1-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="587-1667-1-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="961106-6300-AR-PR">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="AP5724WG-7DICT-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="B0540WSDICT-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="DMP1045UFY4-7DICT-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="low-ESR C0805_10uF">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="MCP1603T-330I/OSCT-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="MRF89XAM9A">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="PIC24FJ64GA104-I/PT-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SC89">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SMBJ5340B-TPMSCT-ND">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="SOT23-5">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
    </package>
 </openpnp-packages>
