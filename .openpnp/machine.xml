@@ -752,6 +752,10 @@
             <text><![CDATA[G21 ; Set millimeters mode]]></text>
             <text><![CDATA[G90 ; Set absolute positioning mode]]></text>
             <text><![CDATA[M82 ; Set absolute mode for extruder]]></text>
+            <text><![CDATA[M49 ; pump 1 off]]></text>
+            <text><![CDATA[M43 ; pump 2 off]]></text>
+            <text><![CDATA[M45 ; pump 1 solenoid off]]></text>
+            <text><![CDATA[M47 ; pump 2 solenoid off]]></text>
             <text><![CDATA[;switch smoothie1]]></text>
          </command>
          <command type="HOME_COMMAND">
@@ -785,6 +789,10 @@
          </command>
          <command type="DISABLE_COMMAND">
             <text><![CDATA[;DISABLE_COMMAND]]></text>
+            <text><![CDATA[M49 ; pump 1 off]]></text>
+            <text><![CDATA[M43 ; pump 2 off]]></text>
+            <text><![CDATA[M45 ; pump 1 solenoid off]]></text>
+            <text><![CDATA[M47 ; pump 2 solenoid off]]></text>
          </command>
          <command type="ENABLE_COMMAND">
             <text><![CDATA[; ENABLE_COMMAND]]></text>
@@ -884,7 +892,9 @@
                   <text><![CDATA[^ok.*]]></text>
                </command>
                <command type="CONNECT_COMMAND">
-                  <text><![CDATA[;switch UpLight]]></text>
+                  <text><![CDATA[M53 ; blow 1 off]]></text>
+                  <text><![CDATA[M55 ; blow 2 off]]></text>
+                  <text><![CDATA[M56 ; up light on]]></text>
                </command>
                <command type="COMMAND_ERROR_REGEX">
                   <text><![CDATA[^unknown.*]]></text>
@@ -956,6 +966,11 @@
                <command head-mountable-id="ACT1503929020027" type="ACTUATE_BOOLEAN_COMMAND">
                   <text><![CDATA[{True:M56}{False:M57}]]></text>
                   <text><![CDATA[G4 P2000]]></text>
+               </command>
+               <command type="DISABLE_COMMAND">
+                  <text><![CDATA[M53 ; blow 1 off]]></text>
+                  <text><![CDATA[M55 ; blow 2 off]]></text>
+                  <text><![CDATA[M57 ; up light off]]></text>
                </command>
                <sub-drivers class="java.util.ArrayList"/>
                <axes class="java.util.ArrayList"/>
