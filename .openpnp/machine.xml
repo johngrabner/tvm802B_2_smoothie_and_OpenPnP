@@ -270,7 +270,7 @@
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenCvCamera" id="CAM1502504759633" name="OpenCvCamera" looking="Down" settle-time-ms="250" rotation="90.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" deinterlace="false" device-index="0" preferred-width="0" preferred-height="0" fps="24">
-                  <units-per-pixel units="Millimeters" x="0.02610966" y="0.02610966" z="0.0" rotation="0.0"/>
+                  <units-per-pixel units="Millimeters" x="0.02550201" y="0.02602459" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
