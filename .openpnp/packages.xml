@@ -85,4 +85,16 @@
    <package version="1.1" id="SOT23-5">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
    </package>
+   <package version="1.1" id="B0540WSDICT-ND ">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="Battery Wire -">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="Battery Wire +">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
+   <package version="1.1" id="probe">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+   </package>
 </openpnp-packages>
