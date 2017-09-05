@@ -2,7 +2,7 @@
    <panels/>
    <board-locations>
       <board-location side="Top" board-file="LED Version 2017-06-29 v2.board.xml" panel-id="Panel1" check-fiducials="false" enabled="true">
-         <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         <location units="Millimeters" x="55.55541829678386" y="179.35913439432426" z="-12.0" rotation="0.5279700334936166"/>
       </board-location>
    </board-locations>
 </openpnp-job>
