@@ -287,7 +287,7 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 2" enabled="true" part-id="0805N-10K_1%" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 2" enabled="true" part-id="0805N-10K_1%" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.77" y="11.913" z="-10.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="15.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="15.4" z="0.0" rotation="0.0"/>
@@ -299,7 +299,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 3" enabled="true" part-id="0805N-2K_5%" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 3" enabled="true" part-id="0805N-2K_5%" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="25.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="28.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="28.4" z="0.0" rotation="0.0"/>
@@ -311,7 +311,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 4" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 4" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="38.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="41.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="41.4" z="0.0" rotation="0.0"/>
@@ -323,7 +323,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 5" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 5" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="51.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="54.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="54.4" z="0.0" rotation="0.0"/>
@@ -335,7 +335,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 6" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 6" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="64.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="67.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="67.4" z="0.0" rotation="0.0"/>
@@ -347,7 +347,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 7" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 7" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="77.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="80.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="80.4" z="0.0" rotation="0.0"/>
@@ -359,7 +359,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 8" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 8" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="90.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="93.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="93.4" z="0.0" rotation="0.0"/>
@@ -371,7 +371,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 9" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 9" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="103.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="106.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="106.4" z="0.0" rotation="0.0"/>
@@ -383,7 +383,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 10" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 10" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="116.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="119.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="119.4" z="0.0" rotation="0.0"/>
@@ -395,7 +395,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 11" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 11" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="129.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="132.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="132.4" z="0.0" rotation="0.0"/>
@@ -407,7 +407,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 12" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 12" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="142.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="145.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="145.4" z="0.0" rotation="0.0"/>
@@ -419,7 +419,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 13" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 13" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="155.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="158.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="158.4" z="0.0" rotation="0.0"/>
@@ -431,7 +431,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 14" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 14" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="168.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="171.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="171.4" z="0.0" rotation="0.0"/>
@@ -443,7 +443,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 15" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 15" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="181.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="184.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="184.4" z="0.0" rotation="0.0"/>
@@ -455,7 +455,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 16" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 16" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="194.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="197.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="197.4" z="0.0" rotation="0.0"/>
@@ -467,7 +467,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 17" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 17" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="207.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="210.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="210.4" z="0.0" rotation="0.0"/>
@@ -479,7 +479,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 18" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 18" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="220.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="223.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="223.4" z="0.0" rotation="0.0"/>
@@ -491,7 +491,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 19" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 19" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.5" y="233.0" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.5" y="236.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="236.4" z="0.0" rotation="0.0"/>
@@ -503,7 +503,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 20 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 20 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.385" y="11.734" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="10.0" y="15.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="15.4" z="0.0" rotation="0.0"/>
@@ -515,7 +515,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 21 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 21 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.385" y="11.734" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="10.0" y="15.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="15.4" z="0.0" rotation="0.0"/>
@@ -527,7 +527,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 22 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 22 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.385" y="11.734" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="10.0" y="15.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="15.4" z="0.0" rotation="0.0"/>
@@ -539,7 +539,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 23 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 23 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.385" y="11.734" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="10.0" y="15.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="15.4" z="0.0" rotation="0.0"/>
@@ -551,7 +551,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503264539565" name="Left 24 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503264539565" name="Left 24 - tbd" enabled="true" part-id="R0201-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="500" pin-down-timeout-ms="200" pin-up-recovery-timeout-ms="200" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.385" y="11.734" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="10.0" y="15.4" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="14.0" y="15.4" z="0.0" rotation="0.0"/>
@@ -563,7 +563,7 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeederWithPinSensorAndStripStepper" id="FDR1503947216045" name="replace me" enabled="false" part-id="R0402-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="200" pin-down-timeout-ms="500" pin-up-recovery-timeout-ms="500" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1503947216045" name="replace me" enabled="false" part-id="R0402-1K" retry-count="3" actuator-name="JJGPin" pin-sensor-name="pinSensor" peel-actuator-name="peelActuator" pin-up-timeout-ms="200" pin-down-timeout-ms="500" pin-up-recovery-timeout-ms="500" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="-4.385" y="11.734" z="-9.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="9.988" y="15.37" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="13.699" y="15.403" z="0.0" rotation="0.0"/>
@@ -575,7 +575,19 @@
             </vision>
             <backoff-distance value="0.1" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1504635654139" name="ReferenceDragFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="JJGPin">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1504635654139" name="ReferenceDragFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" actuator-name="JJGPin" pin-up-timeout-ms="200" pin-down-timeout-ms="500" pin-up-recovery-timeout-ms="1000" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <feed-speed>1.0</feed-speed>
+            <vision enabled="false">
+               <area-of-interest x="0" y="0" width="0" height="0"/>
+               <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            </vision>
+            <backoff-distance value="0.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" id="FDR1504655780479" name="ReferenceDragFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" pin-up-timeout-ms="200" pin-down-timeout-ms="500" pin-up-recovery-timeout-ms="1000" pin-up-value="1" pin-down-value="0" peel-multiplier="1.2">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -869,13 +881,13 @@
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" settle-first="true"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="13" enabled="true" prefix="bv_source_" suffix=".png"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="10" enabled="true" kernel-size="9"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="525"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="1" enabled="true" conversion="Bgr2HsvFull"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="2" enabled="true" hue-min="60" hue-max="130" saturation-min="0" saturation-max="255" value-min="0" value-max="255"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Hsv2BgrFull"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="150"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="1" enabled="false" conversion="Hls2BgrFull"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="2" enabled="false" hue-min="60" hue-max="130" saturation-min="0" saturation-max="255" value-min="0" value-max="255"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Hls2BgrFull"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="6" enabled="true" conversion="Bgr2Gray"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="12" enabled="true" threshold="100" auto="false" invert="false"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="5" enabled="true" retrieval-mode="List" approximation-method="None"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="12" enabled="true" threshold="200" auto="false" invert="true"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="5" enabled="true" retrieval-mode="ConnectedComponent" approximation-method="None"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="9" enabled="true" contours-stage-name="5" min-area="50.0" max-area="900000.0"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="11" enabled="true" diameter="0"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.DrawContours" name="7" enabled="true" contours-stage-name="9" thickness="2" index="-1">
